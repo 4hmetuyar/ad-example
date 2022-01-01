@@ -1,0 +1,81 @@
+<div class="wrapper ">
+  <app-organisms-sidebar></app-organisms-sidebar>
+  <div class="main-panel" style="height: 100vh;">
+    <!-- Navbar -->
+    <app-molecules-header></app-molecules-header>
+    <!-- End Navbar -->
+    <div class="content">
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card ">
+            <div class="card-header ">
+              <h5 class="card-title">Account Overview</h5>
+              <p class="card-category">See you data and compare them with each other.</p>
+            </div>
+            <div class="card-body ">
+              <div class="col-md-8" style="float: left">
+                <canvas height="100" id=chartHours width="400"></canvas>
+              </div>
+              <div class="col-md-4" style="float: left">
+
+                <ul class="list-unstyled">
+                  <li>
+                    <button class="btn btn-default btn-block">Clicks</button>
+                  </li>
+                  <li>
+                    <button class="btn info btn-block">Click Through</button>
+                  </li>
+                  <li>
+                    <button class="btn btn-default btn-block">Cost Per Click</button>
+                  </li>
+                  <li>
+                    <button class="btn btn-default btn-block">Total Spent</button>
+                  </li>
+                  <li>
+                    <button class="btn btn-default btn-block">Impressions</button>
+                  </li>
+                  <li>
+                    <button class="btn btn-default btn-block">Cost Per 1K Impressions</button>
+                  </li>
+                  <li>
+                    <button class="btn btn-default btn-block">Reach</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card ">
+            <div class="card-header ">
+              <h5 class="card-title">All Campaigns</h5>
+              <p class="card-category">See you all campaigns.</p>
+            </div>
+            <div class="card-body ">
+              <mat-tab-group>
+                <mat-tab label="Groups">
+                  <app-organisms-table tableName="Groups Table"  ></app-organisms-table>
+                </mat-tab>
+                <mat-tab label="Campaigns">
+                  <app-organisms-table tableName="Groups Table"></app-organisms-table>
+                </mat-tab>
+                <mat-tab label="Ads">
+                  <app-organisms-table tableName="Groups Table"></app-organisms-table>
+                </mat-tab>
+              </mat-tab-group>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <app-molecules-footer></app-molecules-footer>
+  </div>
+</div>
